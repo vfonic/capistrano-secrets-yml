@@ -30,7 +30,7 @@ namespace :secrets_yml do
   desc "secrets.yml file checks"
   task :check do
     invoke "secrets_yml:check_secrets_file_exists"
-    invoke "secrets_yml:check_git_tracking"
+    # invoke "secrets_yml:check_git_tracking"
     invoke "secrets_yml:check_config_present"
   end
 
